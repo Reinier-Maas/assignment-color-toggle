@@ -1,0 +1,91 @@
+body {
+    background: var(--color);
+}
+
+:root {
+    --color: #fff;
+}
+
+#navbar {
+    display: inline-block;
+    position: relative;
+}
+
+#toggleNav {
+    padding: 50px;
+    border: none;
+}
+
+#navContent {
+    display: none;
+    position: absolute;
+    margin-top: -60px;
+    margin-left: -40px;
+}
+
+#navbar:hover #navContent {
+    display: block;
+}
+  
+.hamburger {
+    display: block;
+    position: relative;
+    margin-top: 30px;
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+    width: 6.3em;
+    height: 12px;
+    background-color: #222;
+    border-radius: 10px;
+}
+
+.hamburger::before,
+.hamburger::after {
+    content: '';
+    position: absolute;
+    left: 0;
+}
+
+.hamburger::before {
+    bottom: 24px;
+}
+
+.hamburger::after {
+    top: 24px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li { 
+    list-style-type: none;
+}
+
+li button {
+    width: 200px;
+    height: 50px;
+    font-size: 1.5rem;
+    border: 1px #222 solid;
+}
+
+li button:hover {
+    opacity: 60%;
+}
+
+#btnRed {
+    background-color: #ff0000;
+}
+#btnOrange {
+    background-color: #ffa500;
+}
+#btnPurple {
+    background-color: #800080;
+}
+#btnGreen {
+    background-color: #008000;
+}
+
